@@ -20,9 +20,10 @@ export default function ImageBlurred(props) {
     src = "https://i.imgur.com/x01Vmo1.jpg",
     wrapperWidth = "600px",
     coverStyle,
-    backgroundStyle,
+    blurredStyle,
     // height = "16rem",
     // width = "16rem",
+    opacity
   } = props;
 
   return (
@@ -31,7 +32,7 @@ export default function ImageBlurred(props) {
         src={src}
         alt=""
         // className="object-cover"
-        style={{ ...backgroundStyle, ...blurred }}
+        style={{ ...blurredStyle, ...blurred, opacity }}
       />
       <img
         src={src}
